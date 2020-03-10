@@ -3,8 +3,12 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+//Palette
+$gradientButtons: linear-gradient(45deg, #33d9de 0%, #33d9de 55%, #243f81 90%);
+$dark: #111111;
+$blue: #2471A3;
+$yellow: #F39C12;
+$red: #e64636;
 
 // Grays
 $black: #000;
@@ -13,11 +17,6 @@ $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
-
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
 
 // Mobile breakpoints
 @mixin mobile {
