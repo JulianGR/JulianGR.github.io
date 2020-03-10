@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 
-  color: $dark;
+  color: $darkerGray;
   font-weight: bold;
   font-family:'Montserrat',sans-serif;
 }
@@ -10228,10 +10228,62 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 
+.nav{
+  padding-left: 15px;
+  padding-right:15px;
+
+}
+
+
+article{
+
+  .postHeader, .postContent{
+
+
+    padding-left: 0.5rem;
+    padding-right:0.5rem;
+    padding-bottom: 0.001rem;
+  }
+
+}
+
+.postHeader{
+  background-color: $darkerGray;
+  color: $white;
+
+  a{
+    color: $white;
+  }
+
+
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+overflow-wrap: break-word;
+word-break: break-word;
+}
 
 
 
+h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: $white;
+  font-family: 'Montserrat',sans-serif;
+  margin-bottom: 0;
+}
 
+h6{
+  font-style: italic;
+  font-size: small;
+  color: $white;
+}
+.postContent{
+  a{
+    float:right;
+  }
+}
 
 
 
