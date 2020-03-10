@@ -2,17 +2,99 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class='row'>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <!-- MAIN -->
+  <div class='col-8'>
 
-      <div class="entry">
-        {{ post.excerpt }}
+
+
+
+
+    {% for post in site.posts limit:6 %}
+    <article>
+      <div class='post border'>
+        <div class='postHeader'>
+          <h1><a href="{{ site.baseurl }}{{ post.url }}"'>{{ post.title }}</a></h1>
+          <h6>{{ post.date | date: "%d %B %Y" }}<h6>
+          </div>
+
+
+          <div class='postContent'>
+            <p>{{ post.excerpt}}</p>
+            <img></img>
+            <a href='{{ site.baseurl }}{{ post.url }}'>Continue reading</a>
+
+          </div>
+
+        </div>
+
+
+
+      </article>
+    </br>
+    {% endfor %}
+
+
+
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class='col-4'>
+
+    <!-- Search -->
+    <div class='row'>
+
+
+      <form class='border'>
+        <div class="input-group md-form form-sm form-1 pl-0">
+          <div class="input-group-prepend">
+            <span class="input-group-text lighten-3" id="basic-text1">
+              //TODO: icon magnifier
+              <i class="fas fa-search text-white"
+              aria-hidden="true"></i></span>
+            </div>
+            <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+
+
+      </div>
+    </br>
+
+    <!-- Featured Posts -->
+    <div class='row'>
+      <div class='border'>
+        <div class='postHeader'>
+          <p>FEATURED POSTS</p>
+        </div>
+
+
+
+
+
+        <div>
+          <a href='al post'><img href='a la imagen en sí'></img></a>
+        </div>
+
+      </br>
+
+      <div>
+        <a href='al post'><img href='a la imagen en sí'></img></a>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    </br>
+
+    <div>
+      <a href='al post'><img href='a la imagen en sí'></img></a>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+</div>
 </div>

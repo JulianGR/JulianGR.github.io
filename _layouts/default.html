@@ -6,12 +6,17 @@
 
 <body>
   <div class="container">
+
+
+    <!-- Header -->
     <div class='row'>
 
       <div class='col'>
         <p style='text-align:center;'>Julián Gómez Rodríguez</p>
       </div>
     </div>
+
+    <!-- navbar -->
     <div class='row'>
 
       <nav class="nav nav-pills nav-fill nav-justified" style='width:100%;'>
@@ -23,25 +28,27 @@
 
 
     </div>
+  </br>
+</br>
+
+{{content}}
+
+</div>
+
+<footer class='footer'>
+  {% include footer.html %}
+</footer>
+
+{% include analytics.html %}
+
+<!-- credits to https://github.com/vfeskov/vanilla-back-to-top -->
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 40,
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
 
 
-    <div class='row'>
-      <div id="main" role="main">
-        {{ content }}
-      </div>
-
-
-
-
-
-
-    </div>
-  </div>
-  <footer class='footer'>
-    {% include footer.html %}
-  </footer>
-
-
-  {% include analytics.html %}
 </body>
 </html>

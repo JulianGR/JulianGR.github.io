@@ -10223,6 +10223,20 @@ a.text-dark:hover, a.text-dark:focus {
   clear: both;
 }
 
+.border {
+  border: 1px solid $black !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 //////////
 //FOOTER//
 //////////
@@ -10234,7 +10248,6 @@ footer{
   position: absolute;
   background:#111;
   color:#fff;
-  bottom:0;
   overflow: hidden;
 }
 
