@@ -10,19 +10,19 @@ layout: default
       </div>
 
 
-      <div class='postContent'>
-        <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
-        <img></img>
-        <a href='{{ site.baseurl }}{{ post.url }}'>Continue reading</a>
-
-      </div>
+      <div class=' postContent'>
+          <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
+          <img></img>
+          <a href='{{ site.baseurl }}{{ post.url }}'>Continue reading</a>
 
     </div>
 
+  </div>
 
 
-  </article>
+
+</article>
 </br>
 {% endfor %}
 
-<a href='{{ site.baseurl }}/postsList'><button role="button" style='display: block;width: 100%;' tabindex="0">Older Posts<span></span><span></span><span></span><span></span><b aria-hidden="true">Older Posts</b><b aria-hidden="true">Older Posts</b><b aria-hidden="true">Older Posts</b><b aria-hidden="true">Older Posts</b></button></a>
+<a href='{{ site.baseurl }}/postsList' class='withoutDecoration'><button style='display: block;width: 100%;'>Older Posts</button></a>

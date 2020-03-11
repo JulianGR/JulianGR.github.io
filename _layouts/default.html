@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   {% include head.html %}
+
+
+
 </head>
 
 <body>
-  <div class="container">
+  <div class='stickyFooterToBottom'>
 
+    <div class="container">
+      <!-- Header -->
 
-    <!-- Header -->
+      <header>
+        <div class='row'>
+          <div class='col'>
+            <p style='text-align:center;'>Julián Gómez Rodríguez</p>
+          </div>
+        </div>
+      </header>
 
-    <header>
+      <!-- navbar -->
       <div class='row'>
-        <div class='col'>
-          <p style='text-align:center;'>Julián Gómez Rodríguez</p>
-        </div>
+        <nav class="nav nav-pills nav-fill nav-justified" style='width:100%;'>
+          <a class="nav-item homeButton withoutDecoration" href="{{ site.baseurl }}/"><button id='home' class='buttonActive' style='display: block;width: 100%;'>Home</button></a>
+          <a class="nav-item withoutDecoration" href="{{ site.baseurl }}/postsList"><button id='postsList' style='display: block;width: 100%;'>Posts List</button></a>
+          <a class="nav-item aboutButton withoutDecoration" href="{{ site.baseurl }}/about"><button id='about' style='display: block;width: 100%;'>About</button></a>
+        </nav>
       </div>
-    </header>
-
-        <!-- navbar -->
-        <div class='row'>
-          <nav class="nav nav-pills nav-fill nav-justified" style='width:100%;'>
-              <a class="nav-item homeButton" href="{{ site.baseurl }}/"><button role="button" style='display: block;width: 100%;' tabindex="0">Home<span></span><span></span><span></span><span></span><b aria-hidden="true">Home</b><b aria-hidden="true">Home</b><b aria-hidden="true">Home</b><b aria-hidden="true">Home</b></button></a>
-              <a class="nav-item " href="{{ site.baseurl }}/postsList"><button role="button" style='display: block;width: 100%;' tabindex="0">Posts List<span></span><span></span><span></span><span></span><b aria-hidden="true">Posts List</b><b aria-hidden="true">Posts List</b><b aria-hidden="true">Posts List</b><b aria-hidden="true">Posts List</b></button></a>
-              <a class="nav-item aboutButton " href="{{ site.baseurl }}/about"><button role="button" style='display: block;width: 100%;' tabindex="0">About<span></span><span></span><span></span><span></span><b aria-hidden="true">About</b><b aria-hidden="true">About</b><b aria-hidden="true">About</b><b aria-hidden="true">About</b></button></a>
-          </nav>
-        </div>
       </br>
-    </br>
+      </br>
 
-    <div class='row'>
+      <div class='row'>
 
-      <!-- MAIN -->
-      <div class='col-8'>
-
-
-
-
-
-
-        {{content}}
+        <!-- MAIN -->
+        <div class='col-8'>
 
 
 
 
 
-      </div>
+
+          {{content}}
 
 
-      <!-- SIDEBAR -->
-      <div class='col-4'>
-
-        <!-- Search -->
-        <div class='row'>
 
 
-          <form class='border' style='width: 100%;'>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text lighten-3" id="basic-text1">
-                <span class="ico ico-mglass"></span></span>
+
+        </div>
+
+
+        <!-- SIDEBAR -->
+        <div class='col-4'>
+
+          <!-- Search -->
+          <div class='row'>
+
+
+            <form class='border' style='width: 100%;'>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text lighten-3" id="basic-text1">
+                    <span class="ico ico-mglass"></span></span>
                 </div>
                 <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
               </div>
@@ -67,61 +71,65 @@
 
 
           </div>
-        </br>
-
-        <!-- Featured Posts -->
-        <div class='row'>
-          <div class='border' style='width: 100%;'>
-            <div class='postHeader'>
-              <h1>FEATURED POSTS</h1>
-            </div>
-
-
-
-
-
-            <div>
-              <a href='al post'><img href='a la imagen en sí'></img></a>
-            </div>
-
           </br>
 
-          <div>
-            <a href='al post'><img href='a la imagen en sí'></img></a>
+          <!-- Featured Posts -->
+          <div class='row'>
+            <div class='border' style='width: 100%;'>
+              <div class='postHeader'>
+                <h1>FEATURED POSTS</h1>
+              </div>
+
+
+
+
+
+              <div>
+                <a href='al post'><img href='a la imagen en sí'></img></a>
+              </div>
+
+              </br>
+
+              <div>
+                <a href='al post'><img href='a la imagen en sí'></img></a>
+              </div>
+
+              </br>
+
+              <div>
+                <a href='al post'><img href='a la imagen en sí'></img></a>
+              </div>
+
+
+
+            </div>
           </div>
 
-        </br>
 
-        <div>
-          <a href='al post'><img href='a la imagen en sí'></img></a>
         </div>
-
-
-
       </div>
     </div>
 
-
+    </br>
   </div>
-</div>
-</div>
+  <!--footer-->
+  <footer class='footer'>
+    {% include footer.html %}
+  </footer>
 
-</br>
-<!--footer-->
-<footer class='footer'>
-  {% include footer.html %}
-</footer>
+  {% include analytics.html %}
 
-{% include analytics.html %}
-
-<!-- credits to https://github.com/vfeskov/vanilla-back-to-top -->
-<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-<script>addBackToTop({
-  diameter: 40,
-  backgroundColor: '#ddd',
-  textColor: 'red'
-})</script>
+  <!-- credits to https://github.com/vfeskov/vanilla-back-to-top -->
+  <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+  <script>
+    addBackToTop({
+      diameter: 40,
+      backgroundColor: '#ddd',
+      textColor: 'red'
+    })
+  </script>
 
 
 </body>
+
 </html>
