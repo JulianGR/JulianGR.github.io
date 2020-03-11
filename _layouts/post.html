@@ -2,16 +2,26 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<article>
+  <div class='post border'>
+    <div class='postHeader'>
+      <h1>{{ page.title }}</h1>
+      <h6>Posted on {{ page.date | date: "%d %B %Y" }}<h6>
+      </div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+      <div class='postContent'>
+        <p>{{ content }}</p>
+        <img></img>
 
-  {% include disqus.html %}
-</article>
+        
+      </div>
+
+    </div>
+
+
+    {% include disqus.html %}
+  </article>
+</br>
+
+<a href='{{ site.baseurl }}/postsList'><button role="button" style='display: block;width: 100%;' tabindex="0">More Posts<span></span><span></span><span></span><span></span><b aria-hidden="true">More Posts</b><b aria-hidden="true">More Posts</b><b aria-hidden="true">More Posts</b><b aria-hidden="true">More Posts</b></button></a>

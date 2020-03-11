@@ -21,9 +21,9 @@
         <!-- navbar -->
         <div class='row'>
           <nav class="nav nav-pills nav-fill nav-justified" style='width:100%;'>
-            <a class="nav-item nav-link active" href="{{ site.baseurl }}/">Home</a>
-            <a class="nav-item nav-link" href="{{ site.baseurl }}/postsList">Posts List</a>
-            <a class="nav-item nav-link" href="{{ site.baseurl }}/about">About</a>
+              <a class="nav-item homeButton" href="{{ site.baseurl }}/"><button role="button" style='display: block;width: 100%;' tabindex="0">Home<span></span><span></span><span></span><span></span><b aria-hidden="true">Home</b><b aria-hidden="true">Home</b><b aria-hidden="true">Home</b><b aria-hidden="true">Home</b></button></a>
+              <a class="nav-item " href="{{ site.baseurl }}/postsList"><button role="button" style='display: block;width: 100%;' tabindex="0">Posts List<span></span><span></span><span></span><span></span><b aria-hidden="true">Posts List</b><b aria-hidden="true">Posts List</b><b aria-hidden="true">Posts List</b><b aria-hidden="true">Posts List</b></button></a>
+              <a class="nav-item aboutButton " href="{{ site.baseurl }}/about"><button role="button" style='display: block;width: 100%;' tabindex="0">About<span></span><span></span><span></span><span></span><b aria-hidden="true">About</b><b aria-hidden="true">About</b><b aria-hidden="true">About</b><b aria-hidden="true">About</b></button></a>
           </nav>
         </div>
       </br>
@@ -55,13 +55,11 @@
         <div class='row'>
 
 
-          <form class='border'>
-            <div class="input-group md-form form-sm form-1 pl-0">
+          <form class='border' style='width: 100%;'>
+            <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text lighten-3" id="basic-text1">
-                  //TODO: icon magnifier
-                  <i class="fas fa-search text-white"
-                  aria-hidden="true"></i></span>
+                <span class="ico ico-mglass"></span></span>
                 </div>
                 <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
               </div>
@@ -73,9 +71,9 @@
 
         <!-- Featured Posts -->
         <div class='row'>
-          <div class='border'>
+          <div class='border' style='width: 100%;'>
             <div class='postHeader'>
-              <p>FEATURED POSTS</p>
+              <h1>FEATURED POSTS</h1>
             </div>
 
 
