@@ -2,7 +2,9 @@
 ---
 @import "reset";
 @import "variables";
-@import "bootstrap.min"; //Nicolas Gallagher's micro clearfix hack
+@import "bootstrap.min";
+
+ //Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 
 .clearfix:after,
@@ -57,55 +59,107 @@ h6 {
   }
 }
 
-a{
+a {
   color: $blue;
 }
 
-article {
-  .postContent,
-  .postHeader {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0.001rem;
-    padding-top: 0.4rem;
+.postHeader {
+  background-color: $darkGray;
+  color: $white;
+  padding: 0.4rem 0.5rem 0.001rem;
+
+  a {
+    color: $white;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    font-family: 'Montserrat',sans-serif;
+    margin-bottom: 0;
+  }
+
+  h6 {
+    font-style: italic;
+    font-size: small;
+    color: $white;
+    font-weight: normal;
   }
 }
 
 .postContent {
   background-color: $white;
+  padding: 0.4rem 0.5rem 0.001rem;
 
-  a {
+  .linkToLeft {
     float: right;
   }
-}
 
-
-.postHeader {
-  background-color: $darkGray;
-  color: $white;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 0.001rem;
-
-  a {
-    color: $white;
+  ul {
+    margin-left: 2rem;
+    list-style: initial;
   }
-}
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $white;
-  font-family: 'Montserrat',sans-serif;
-  margin-bottom: 0;
-}
+  ol {
+    margin-left: 2rem;
+    list-style: decimal;
+    list-style-type: decimal;
+  }
 
-h6 {
-  font-style: italic;
-  font-size: small;
-  color: $white;
-  font-weight: normal;
+  blockquote {
+    padding: 0.5rem;
+    border-left: 5px solid #eee;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  blockquote:after,
+  blockquote:before {
+    content: "";
+  }
+
+  hr {
+    border-top: 1px solid $darkGray;
+  }
+
+  pre {
+    padding-left: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+  }
+
+  td,
+  th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+  }
+
+  th {
+    font-weight: bold;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+
+  pre {
+    overflow: auto;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  img {
+    max-width: 35%;
+  }
 }
 
 .featuredPost {
@@ -155,7 +209,7 @@ body {
   color: #fff;
   text-align: center;
   padding: 2rem 3rem 2.75rem;
-  text-shadow: 1px 1px 0 #CCCCCC, 2px 2px 0 #c9c9c9, 3px 3px 0 #bbb, 4px 4px 0 #b9b9b9, 5px 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  text-shadow: 1px 1px 0 #CCCCCC, 2px 2px 0 #c9c9c9, 3px 3px 0 #bbb, 4px 4px 0 #b9b9b9, 5px 5px 0 #aaa, 1px 1px 1px rgba(0,0,0,.1), 2px 2px 2px rgba(0,0,0,.1), 1px 1px 3px rgba(0,0,0,.2), 3px 3px 5px rgba(0,0,0,.2), 4px 4px 3px rgba(0,0,0,.3), 5px 5px 10px rgba(0,0,0,.3), 6px 6px 5px rgba(0,0,0,.4), 7px 7px 10px rgba(0,0,0,.4), 8px 8px 10px rgba(0,0,0,.5), 9px 9px 20px rgba(0,0,0,.5), 10px 10px 10px rgba(0,0,0,.6);
 
   a {
     color: $white;
@@ -177,7 +231,7 @@ body {
 
 button {
   border: 5px solid $red;
-  background: transparent;
+  background: $white;
   color: $red;
   padding: 8px 16px;
   font-weight: bold;
@@ -187,12 +241,12 @@ button {
   outline: transparent;
   -webkit-transition: background 0.15s ease, color 0.15s ease, box-shadow 0.05s ease;
   transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 8px 8px 0 #888;
+  box-shadow: 8px 8px 0 #555;
 }
 
 .buttonActive {
   background: $red;
-  box-shadow: 4px 4px 0 #888;
+  box-shadow: 4px 4px 0 #555;
   text-decoration: none;
   color: $white;
 }
@@ -200,11 +254,11 @@ button {
 button:hover {
   color: currentColor;
   background: $red;
-  box-shadow: 4px 4px 0 #888;
+  box-shadow: 4px 4px 0 #555;
 }
 
 button:active {
-  box-shadow: 0 0 0 #888;
+  box-shadow: 0 0 0 #555;
 }
 
 .withoutDecoration:hover {
@@ -263,11 +317,12 @@ footer {
     padding: 0;
     box-shadow: none;
     margin-left: 1rem;
+    background: transparent!important;
   }
 
   button:hover {
     color: $white;
-    background: transparent;
+    background: transparent!important;
     box-shadow: none;
   }
 
