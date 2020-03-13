@@ -2,9 +2,7 @@
 ---
 @import "reset";
 @import "variables";
-@import "bootstrap.min";
-
-//Nicolas Gallagher's micro clearfix hack
+@import "bootstrap.min"; //Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 
 .clearfix:after,
@@ -26,7 +24,7 @@ html {
 
 body {
   overflow: visible!important;
-  height:100%;
+  height: 100%;
 }
 
 h1,
@@ -71,6 +69,9 @@ article {
 .postHeader {
   background-color: $darkerGray;
   color: $white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.001rem;
 
   a {
     color: $white;
@@ -80,7 +81,7 @@ article {
 h1 {
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: $white;
   font-family: 'Montserrat',sans-serif;
   margin-bottom: 0;
@@ -90,9 +91,12 @@ h6 {
   font-style: italic;
   font-size: small;
   color: $white;
+  font-weight: normal;
 }
 
 .postContent {
+  margin-top: 0.4rem;
+
   a {
     float: right;
   }
@@ -104,8 +108,81 @@ h6 {
 
 #back-to-top {
   border-radius: 0;
-
 }
+
+
+.input-group-text, .form-control{
+  border: 0;
+  border-radius: 0;
+}
+
+.input-group-text{
+  background-color: $darkerGray;
+}
+
+em{
+  font-style: italic;
+}
+
+
+.backgroundHeader{
+  transform: rotate(180deg);
+  z-index: -123;
+  margin-bottom: calc(-height);
+}
+.container{
+  z-index: 12345;
+}
+
+
+
+//DISEÑO:
+//https://getwaves.io/
+//https://codepen.io/supah/pen/prVVOx
+//https://codepen.io/soju22/pen/xxGqJxj
+//https://codepen.io/dev_loop/pen/QWbMmoy
+//https://html-css-js.com/css/generator/text-shadow/
+//https://codepen.io/GeorgePark/pen/MrjbEr
+//https://codepen.io/Trinca/pen/NAvpWa
+
+
+
+
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+
+
 ///////////
 //BUTTONS//
 ///////////
@@ -114,6 +191,7 @@ h6 {
 //https://freefrontend.com/css-button-hover-effects/
 //https://codepen.io/davidicus/pen/emgQKJ
 //https://css-tricks.com/ghost-buttons-with-directional-awareness-in-css/
+
 button {
   border: 5px solid $red;
   background: transparent;
@@ -124,8 +202,8 @@ button {
   font-size: 1rem;
   cursor: pointer;
   outline: transparent;
-  -webkit-transition: background 0.25s ease, color 0.25s ease, box-shadow 0.15s ease;
-  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.15s ease;
+  -webkit-transition: background 0.15s ease, color 0.15s ease, box-shadow 0.05s ease;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
   box-shadow: 8px 8px 0 #888;
 }
 
@@ -154,32 +232,33 @@ button:active {
 //FOOTER//
 //////////
 
-
-.stickyFooterToBottom {
-  min-height: 100%;
-   /* equal to footer height */
- 	margin-bottom: -17.5vh;
-}
-
-.stickyFooterToBottom:after {
-  content: "";
-  display: block;
-}
-footer, .stickyFooterToBottom:after {
-  /* .push must be the same height as footer */
-	height: 17.5vh;
-}
-
 footer {
   width: 100%;
   margin: 0;
   padding: 0;
   background: #111;
+  position: absolute;
   color: #fff;
   overflow: hidden;
   flex-shrink: 0;
+
+  button {
+    border: 1px solid $white;
+    background: transparent;
+    color: $white;
+  }
 }
 
+.upperRow:after{
+  background: $white;
+  top: -10px;
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+
+}
 .footerRow {
   margin-top: 1rem;
 }
@@ -202,12 +281,21 @@ footer {
 }
 
 .upperRow {
-  margin-bottom: -1rem;
+  margin-bottom: 1rem;
 }
 
-hr {
-  border: 0.01rem solid $white;
+.refreshQuote{
+  border: 0;
+  background: transparent;
+  color: #fff;
+  box-shadow: none;
 }
+
+img{
+  height: 100px;
+  width: 100px;
+}
+
 /////////////
 //SVG ICONS//
 /////////////

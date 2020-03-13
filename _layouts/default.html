@@ -3,119 +3,90 @@
 
 <head>
   {% include head.html %}
-
-
-
 </head>
 
 <body>
-  <div class='stickyFooterToBottom'>
 
-    <div class="container">
-      <!-- Header -->
 
-      <header>
-        <div class='row'>
-          <div class='col'>
-            <p style='text-align:center;'>Julián Gómez Rodríguez</p>
-          </div>
-        </div>
-      </header>
+  <svg class='backgroundHeader' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#00cba9" fill-opacity="1"
+      d="M0,64L26.7,53.3C53.3,43,107,21,160,42.7C213.3,64,267,128,320,138.7C373.3,149,427,107,480,74.7C533.3,43,587,21,640,37.3C693.3,53,747,107,800,149.3C853.3,192,907,224,960,229.3C1013.3,235,1067,213,1120,218.7C1173.3,224,1227,256,1280,266.7C1333.3,277,1387,267,1413,261.3L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+    </path>
+  </svg>
 
-      <!-- navbar -->
+  <div class="container">
+
+
+
+    <!-- Header -->
+    <header>
       <div class='row'>
-        <nav class="nav nav-pills nav-fill nav-justified" style='width:100%;'>
-          <a class="nav-item homeButton withoutDecoration" href="{{ site.baseurl }}/"><button id='home' class='buttonActive' style='display: block;width: 100%;'>Home</button></a>
-          <a class="nav-item withoutDecoration" href="{{ site.baseurl }}/postsList"><button id='postsList' style='display: block;width: 100%;'>Posts List</button></a>
-          <a class="nav-item aboutButton withoutDecoration" href="{{ site.baseurl }}/about"><button id='about' style='display: block;width: 100%;'>About</button></a>
-        </nav>
+        <div class='col'>
+          <p class='neon' style='text-align:center;'>Julián Gómez Rodríguez</p>
+        </div>
       </div>
-      </br>
-      </br>
+    </header>
 
-      <div class='row'>
+    <!-- navbar -->
+    <div class='row'>
+      <nav class="nav nav-pills nav-fill nav-justified" style='width:100%;'>
+        <a class="nav-item homeButton withoutDecoration" href="{{ site.baseurl }}/"><button id='home' class='buttonActive' style='display: block;width: 100%;'>Home</button></a>
+        <a class="nav-item withoutDecoration" href="{{ site.baseurl }}/postsList"><button id='postsList' style='display: block;width: 100%;'>Posts List</button></a>
+        <a class="nav-item aboutButton withoutDecoration" href="{{ site.baseurl }}/about"><button id='about' style='display: block;width: 100%;'>About</button></a>
+      </nav>
+    </div>
+    </br>
+    </br>
 
-        <!-- MAIN -->
-        <div class='col-8'>
+    <div class='row'>
+      <!-- MAIN -->
+      <div class='col-8'>
+        {{content}}
+      </div>
+      <!-- SIDEBAR -->
+      <div class='col-4'>
 
-
-
-
-
-
-          {{content}}
-
-
-
-
-
+        <!-- Search -->
+        <div class='row'>
+          <form class='border' style='width: 100%;'>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text lighten-3">
+                  <!--TODO-->
+                  <img href='{{site.baseurl}}/images/refresh.png'></img></span>
+              </div>
+              <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
         </div>
+        </br>
 
-
-        <!-- SIDEBAR -->
-        <div class='col-4'>
-
-          <!-- Search -->
-          <div class='row'>
-
-
-            <form class='border' style='width: 100%;'>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text lighten-3" id="basic-text1">
-                    <span class="ico ico-mglass"></span></span>
-                </div>
-                <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
-              </div>
-            </form>
-
-
-          </div>
-          </br>
-
-          <!-- Featured Posts -->
-          <div class='row'>
-            <div class='border' style='width: 100%;'>
-              <div class='postHeader'>
-                <h1>FEATURED POSTS</h1>
-              </div>
-
-
-
-
-
-              <div>
-                <a href='al post'><img href='a la imagen en sí'></img></a>
-              </div>
-
-              </br>
-
-              <div>
-                <a href='al post'><img href='a la imagen en sí'></img></a>
-              </div>
-
-              </br>
-
-              <div>
-                <a href='al post'><img href='a la imagen en sí'></img></a>
-              </div>
-
-
-
+        <!-- Featured Posts -->
+        <div class='row'>
+          <div class='border' style='width: 100%;'>
+            <div class='postHeader'>
+              <h1>FEATURED POSTS</h1>
+            </div>
+            <div>
+              <a href='al post'><img href='a la imagen en sí'></img></a>
+            </div>
+            </br>
+            <div>
+              <a href='al post'><img href='a la imagen en sí'></img></a>
+            </div>
+            </br>
+            <div>
+              <a href='al post'><img href='a la imagen en sí'></img></a>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
-
-    </br>
   </div>
+  </br>
   <!--footer-->
-  <footer class='footer'>
-    {% include footer.html %}
-  </footer>
+  {% include footer.html %}
+
 
   {% include analytics.html %}
 
@@ -129,7 +100,22 @@
     })
   </script>
 
+  <!-- TODO: Make it Asynchronous-->
+  <script>
+    function getQuote() {
 
+      $.get('../quotes', null, function(text) {
+
+        var quotesObject = $(text).find(".quote").toArray();
+        var quotesArray = Array.from(quotesObject, x => x.innerHTML);
+
+        var numberQuotes = quotesArray.length;
+        var chosenQuote = Math.floor(Math.random() * (numberQuotes));
+        document.getElementById('showQuote').innerHTML = quotesArray[chosenQuote];
+      });
+    }
+    getQuote();
+  </script>
 </body>
 
 </html>
