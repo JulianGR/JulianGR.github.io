@@ -1,25 +1,9 @@
-
-//
-// VARIABLES
-//
-
 //Palette
-$gradientButtons: linear-gradient(45deg, #33d9de 0%, #33d9de 55%, #243f81 90%);
+
 $blue: #2471A3;
 $yellow: #F39C12;
 $red: #e64636;
 
-// Grays
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
+$darkGray: #222;
 $white: #fff;
-
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}

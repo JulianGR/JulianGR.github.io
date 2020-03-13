@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $darkerGray;
+  color: $darkGray;
   font-weight: bold;
   font-family: 'Montserrat',sans-serif;
   overflow-wrap: break-word;
@@ -57,17 +57,31 @@ h6 {
   }
 }
 
+a{
+  color: $blue;
+}
+
 article {
   .postContent,
   .postHeader {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.001rem;
+    padding-top: 0.4rem;
   }
 }
 
+.postContent {
+  background-color: $white;
+
+  a {
+    float: right;
+  }
+}
+
+
 .postHeader {
-  background-color: $darkerGray;
+  background-color: $darkGray;
   color: $white;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -94,48 +108,31 @@ h6 {
   font-weight: normal;
 }
 
-.postContent {
-  margin-top: 0.4rem;
-
-  a {
-    float: right;
-  }
-}
-
 .featuredPost {
   width: 100%;
+}
+
+.featuredPostContent {
+  background-color: $white;
 }
 
 #back-to-top {
   border-radius: 0;
 }
 
-
-.input-group-text, .form-control{
+.form-control,
+.input-group-text {
   border: 0;
   border-radius: 0;
 }
 
-.input-group-text{
-  background-color: $darkerGray;
+.input-group-text {
+  background-color: $darkGray;
 }
 
-em{
+em {
   font-style: italic;
 }
-
-
-.backgroundHeader{
-  transform: rotate(180deg);
-  z-index: -123;
-  margin-bottom: calc(-height);
-}
-.container{
-  z-index: 12345;
-}
-
-
-
 //DISEÑO:
 //https://getwaves.io/
 //https://codepen.io/supah/pen/prVVOx
@@ -144,45 +141,31 @@ em{
 //https://html-css-js.com/css/generator/text-shadow/
 //https://codepen.io/GeorgePark/pen/MrjbEr
 //https://codepen.io/Trinca/pen/NAvpWa
+//https://codepen.io/peacepostman/pen/jBavvN
 
-
-
-
-
-@font-face {
-  font-family: neon;
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+body {
+  background-image: url({{ site.baseurl }}/images/method-draw-image.svg);
+  background-repeat: no-repeat;
+  color: $black;
 }
 
-.neon {
-  font-family: neon;
-  color: #FB4264;
-  font-size: 9vw;
-  line-height: 9vw;
-  text-shadow: 0 0 3vw #F40A35;
-}
+.headerTitle {
+  font-size: 5rem;
+  font-weight: 200;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 3rem 2.75rem;
+  text-shadow: 1px 1px 0 #CCCCCC, 2px 2px 0 #c9c9c9, 3px 3px 0 #bbb, 4px 4px 0 #b9b9b9, 5px 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 
-
-.neon {
-  animation: neon 1s ease infinite;
-  -moz-animation: neon 1s ease infinite;
-  -webkit-animation: neon 1s ease infinite;
-}
-
-@keyframes neon {
-  0%,
-  100% {
-    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
-    color: #FED128;
+  a {
+    color: $white;
   }
-  50% {
-    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
-    color: #806914;
+
+  a:hover {
+    color: $white;
+    text-decoration: none;
   }
 }
-
-
-
 ///////////
 //BUTTONS//
 ///////////
@@ -236,20 +219,14 @@ footer {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #111;
+  background: $darkGray;
   position: absolute;
   color: #fff;
   overflow: hidden;
   flex-shrink: 0;
-
-  button {
-    border: 1px solid $white;
-    background: transparent;
-    color: $white;
-  }
 }
 
-.upperRow:after{
+.upperRow:after {
   background: $white;
   top: -10px;
   content: '';
@@ -257,8 +234,8 @@ footer {
   display: block;
   width: 100%;
   height: 1px;
-
 }
+
 .footerRow {
   margin-top: 1rem;
 }
@@ -272,6 +249,31 @@ footer {
 .footerMiddle {
   font-size: small;
   text-align: center;
+
+  .imgRefreshQuote {
+    height: 1rem;
+    width: 1rem;
+    border: 0;
+    background: transparent;
+    color: #fff;
+  }
+
+  button {
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+    margin-left: 1rem;
+  }
+
+  button:hover {
+    color: $white;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  button:active {
+    box-shadow: none;
+  }
 }
 
 .footerRight {
@@ -284,18 +286,9 @@ footer {
   margin-bottom: 1rem;
 }
 
-.refreshQuote{
-  border: 0;
-  background: transparent;
-  color: #fff;
-  box-shadow: none;
+#showQuote {
+  display: inline-block;
 }
-
-img{
-  height: 100px;
-  width: 100px;
-}
-
 /////////////
 //SVG ICONS//
 /////////////
