@@ -1,10 +1,12 @@
 ---
 ---
-@import "reset";
-@import "variables";
-@import "bootstrap.min";
-
- //Nicolas Gallagher's micro clearfix hack
+//Palette
+$blue: #2471A3;
+$yellow: #F39C12;
+$red: #e64636;
+$black: #000;
+$darkGray: #222;
+$white: #fff; //Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 
 .clearfix:after,
@@ -16,7 +18,6 @@
 .clearfix:after {
   clear: both;
 }
-
 
 html {
   font-size: 100%;
@@ -185,17 +186,15 @@ a {
   background-color: $darkGray;
 }
 
-
 em {
   font-style: italic;
 }
 
-.alert-warning{
+.alert-warning {
   margin-top: 2rem;
   width: 100%;
   text-align: center;
 }
-
 //DISEÑO:
 //https://getwaves.io/
 //https://codepen.io/supah/pen/prVVOx
