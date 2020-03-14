@@ -1,37 +1,73 @@
 <head>
-
   <meta charset="utf-8" />
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
-  {% if page.excerpt %}
-  <meta name="description" content="{{ page.excerpt| strip_html }}" />
-  <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-  {% else %}
-  <meta name="description" content="{{ site.description }}">
-  <meta property="og:description" content="{{ site.description }}" />
-  {% endif %}
-  <meta name="author" content="{{ site.name }}" />
-
-  {% if page.title %}
-  <meta property="og:title" content="{{ page.title }}" />
-  {% endif %}
-
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
-
+  <meta name="description" content="Personal blog from JulianGR">
+  <meta property="og:description" content="Personal blog from JulianGR" />
+  <meta name="author" content="JulianGR" />
+  <meta property="og:title" content="JulianGR's blog" />
   <title>JulianGR's blog</title>
-
   <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-  <link rel='icon' type='image/icon' href='./images/favicon.ico'>
+  <link rel='icon' type='image/icon' href='{{site.baseurl}}/assets/favicon.ico'>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS local fallback -->
+  <script>
+    var test = document.createElement("div")
+    test.className = "hidden d-none"
+
+    document.head.appendChild(test)
+    var cssLoaded = window.getComputedStyle(test).display === "none"
+    document.head.removeChild(test)
+
+    if (!cssLoaded) {
+      var link = document.createElement("link");
+
+      link.type = "text/css";
+      link.rel = "stylesheet";
+      link.href = "{{site.baseurl}}/assets/fallback/bootstrap.min.css";
+
+      document.head.appendChild(link);
+    }
+  </script>
+
+  <!-- Google Fonts CDN -->
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+  <!-- Google Fonts local fallback -->
+  <script>
+    var test = document.createElement("div")
+    test.className = "hidden d-none"
+
+    document.head.appendChild(test)
+    var cssLoaded = window.getComputedStyle(test).display === "none"
+    document.head.removeChild(test)
+
+    if (!cssLoaded) {
+      var link = document.createElement("link");
+
+      link.type = "text/css";
+      link.rel = "stylesheet";
+      link.href = "{{site.baseurl}}/assets/fallback/montserrat.css";
+
+      document.head.appendChild(link);
+
+      var link = document.createElement("link");
+
+      link.type = "text/css";
+      link.rel = "stylesheet";
+      link.href = "{{site.baseurl}}/assets/fallback/arimo.css";
+
+      document.head.appendChild(link);
+    }
+  </script>
 
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-
-
-  <script src='https://code.jquery.com/jquery-3.4.1.min.js' type='text/javascript'></script>
 </head>

@@ -17,6 +17,7 @@
   clear: both;
 }
 
+
 html {
   font-size: 100%;
   overflow: visible!important;
@@ -184,9 +185,17 @@ a {
   background-color: $darkGray;
 }
 
+
 em {
   font-style: italic;
 }
+
+.alert-warning{
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
 //DISEÑO:
 //https://getwaves.io/
 //https://codepen.io/supah/pen/prVVOx
@@ -198,7 +207,7 @@ em {
 //https://codepen.io/peacepostman/pen/jBavvN
 
 body {
-  background-image: url({{ site.baseurl }}/images/method-draw-image.svg);
+  background-image: url({{ site.baseurl }}/assets/method-draw-image.svg);
   background-repeat: no-repeat;
   color: $black;
 }
