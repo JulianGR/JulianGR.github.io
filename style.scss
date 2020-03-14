@@ -91,11 +91,17 @@ a {
   }
 }
 
+
+
 .postContent {
   background-color: $white;
-  padding: 0.4rem 0.5rem 0.001rem;
+  padding: 0.4rem 0.5rem 0.5rem;
 
-  .linkToLeft {
+  p {
+    margin-bottom: 0.1rem;
+  }
+
+  .linkToRight {
     float: right;
   }
 
@@ -164,12 +170,27 @@ a {
   }
 }
 
+.fromIndex{
+  padding-bottom: 2rem;
+}
+
+.mainImg {
+  max-width: 100%!important;
+  border: 1px solid $black;
+}
+
 .featuredPost {
   width: 100%;
 }
 
 .featuredPostContent {
   background-color: $white;
+  padding: 1rem 0.2rem;
+}
+
+.featurePostImage {
+  align-content: center;
+  align-self: center;
 }
 
 #back-to-top {
@@ -188,6 +209,10 @@ a {
 
 em {
   font-style: italic;
+}
+
+.table th {
+  text-align: center;
 }
 
 .alert-warning {

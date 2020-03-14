@@ -9,11 +9,13 @@ layout: default
       <h6>Posted on {{ post.date | date: "%d %B %Y" }}<h6>
       </div>
 
+      <div class='postContent fromIndex'>
+          <!-- IMG should be 650 x 210 px-->
+          <a href='{{ post.url }}'>
+            <img class='img-fluid mx-auto d-block mainImg' src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.altAndTitle }}" title="{{ post.altAndTitle }}"></img></a>
+          <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
 
-      <div class=' postContent'>
-          <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
-          <img></img>
-          <a class='linkToLeft' href='{{ site.baseurl }}{{ post.url }}'>Continue reading</a>
+          <a class='linkToRight' href='{{ site.baseurl }}{{ post.url }}'>Continue reading</a>
 
     </div>
 
