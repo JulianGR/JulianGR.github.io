@@ -1,8 +1,4 @@
----
-layout: none
----
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
+Disallow:
 
-User Agent: Googlebot-Image
-Disallow: /
+Sitemap: {{ site.url }}/sitemap.xml 

@@ -12,8 +12,7 @@ Personal blog/ website!
 -   Disqus/ comment system
 -   Analytics (pls not Google Analytics, sth privacy-friendly)
 -   search (Lunr.js maybe?)
-
-//<https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/>
-//<https://jekyllcodex.org/without-plugin/search-lunr/>
-<https://rayhightower.com/blog/2016/01/04/how-to-make-lunrjs-jekyll-work-together/>
-<https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js>
+    <https://olivernn.github.io/moonwalkers/>
+    <https://github.com/olivernn/moonwalkers/tree/master/docs>
+    <https://github.com/olivernn/moonwalkers/blob/master/src/wrapper.js>
+    <https://github.com/olivernn/moonwalkers/blob/master/src/main.js>
