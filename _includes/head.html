@@ -4,19 +4,38 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
   <meta name="description" content="Personal blog from JulianGR">
-  <meta property="og:description" content="Personal blog from JulianGR" />
   <meta name="author" content="JulianGR" />
-  <meta property="og:title" content="JulianGR's blog" />
   <title>JulianGR's blog</title>
+
+  <!-- Facebook integration -->
+  <meta property="og:title" content="JulianGR's blog" />
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="JulianGR's blog" />
+  <meta property="og:description" content="Personal blog from JulianGR" />
+
+  <!-- Twitter integration -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JulianGR's blog" />
+  <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+  <meta name="twitter:description" content="Personal blog from JulianGR" />
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
   <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+  <!--TODO:
+<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png">
+<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png">
+<link rel="apple-touch-icon" href="/img/icon-196x196.png">
+
+-->
   <link rel='icon' type='image/icon' href='{{site.baseurl}}/assets/favicon.ico'>
 
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/reset.css" />
-
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -41,9 +60,8 @@
   </script>
 
   <!-- Google Fonts CDN -->
-
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
   <!-- Google Fonts local fallback -->
   <script>
     var test = document.createElement("div")
@@ -72,5 +90,4 @@
     }
   </script>
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-
 </head>
