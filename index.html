@@ -9,9 +9,13 @@ layout: default
       <h6>Posted on {{ post.date | date: "%d %B %Y" }}<h6>
       </div>
 
-      <div class='postContent fromIndex'>          
-          <a href='{{ post.url }}'>
-            <img class='img-fluid mx-auto d-block mainImg' src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.altAndTitle }}" title="{{ post.altAndTitle }}"></img></a>
+      <div class=' postContent fromIndex'>
+
+          {% if post.image != nil and post.image != "" and post.image != blank %}
+          <a href='{{ post.url }}'><img class='img-fluid mx-auto d-block mainImg' src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.altAndTitle }}" title="{{ post.altAndTitle }}"></img></a>
+          {% else  %}
+          {% endif %}
+
           <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
 
           <a class='linkToRight' href='{{ site.baseurl }}{{ post.url }}'>Continue reading</a>
