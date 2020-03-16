@@ -1,29 +1,29 @@
 <head>
   <meta charset="utf-8" />
-  <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="Personal blog from JulianGR">
   <meta name="author" content="JulianGR" />
-  <title>JulianGR's blog</title>
+  <title>JulianGR"s blog</title>
 
   <!-- Facebook integration -->
-  <meta property="og:title" content="JulianGR's blog" />
+  <meta property="og:title" content="JulianGR"s blog" />
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="JulianGR's blog" />
+  <meta property="og:site_name" content="JulianGR"s blog" />
   <meta property="og:description" content="Personal blog from JulianGR" />
 
   <!-- Twitter integration -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="JulianGR's blog" />
+  <meta name="twitter:title" content="JulianGR"s blog" />
   <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
   <meta name="twitter:description" content="Personal blog from JulianGR" />
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url }}">
 
   <!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
   <!--TODO:
@@ -32,10 +32,10 @@
 <link rel="apple-touch-icon" href="/img/icon-196x196.png">
 
 -->
-  <link rel='icon' type='image/icon' href='{{site.baseurl}}/assets/favicon.ico'>
+  <link rel="icon" href="{{site.baseurl}}/assets/favicon.ico">
 
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/reset.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/reset.css" />
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -60,8 +60,8 @@
   </script>
 
   <!-- Google Fonts CDN -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css' />
-  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet"  />
+  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic" rel="stylesheet"/>
   <!-- Google Fonts local fallback -->
   <script>
     var test = document.createElement("div")
@@ -74,7 +74,6 @@
     if (!cssLoaded) {
       var link = document.createElement("link");
 
-      link.type = "text/css";
       link.rel = "stylesheet";
       link.href = "{{site.baseurl}}/assets/fallback/montserrat.css";
 
@@ -82,12 +81,11 @@
 
       var link = document.createElement("link");
 
-      link.type = "text/css";
       link.rel = "stylesheet";
       link.href = "{{site.baseurl}}/assets/fallback/arimo.css";
 
       document.head.appendChild(link);
     }
   </script>
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
 </head>

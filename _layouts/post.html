@@ -4,22 +4,22 @@ comments: true
 ---
 
 <article>
-  <div class='post border'>
-    <div class='postHeader'>
+  <div class="post border">
+    <div class="postHeader">
       <h1>{{ page.title }}</h1>
       <h6>Posted on {{ page.date | date: "%d %B %Y" }}</h6>
     </div>
 
 
-    <div class='postContent'>
-      <img class='img-fluid mx-auto d-block mainImg' src='.{{ page.image }}' alt='{{ page.altAndTitle }}' title='{{ page.altAndTitle }}' </img>
+    <div class="postContent">
+      <img class="img-fluid mx-auto d-block mainImg" src=".{{ page.image }}" alt="{{ page.altAndTitle }}" title="{{ page.altAndTitle }}" </img>
       <p>{{ content }}</p>
     </div>
   </div>
 
 </article>
-</br>
+<br>
 
-<a href='{{ site.baseurl }}/postsList' class='withoutDecoration'><button style='display: block;width: 100%;'>More Posts</button></a>
-</br>
+<a href="{{ site.baseurl }}/postsList" class="withoutDecoration"><button style="display: block;width: 100%;">More Posts</button></a>
+<br>
 {% include disqus.html %}

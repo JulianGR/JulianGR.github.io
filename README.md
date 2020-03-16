@@ -29,9 +29,11 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 -   Minify HTML in build
 -   <https://blog.webjeda.com/compress-html-jekyll/>
 -   Responsive
+-   all styles from html to the css
 -   photo like the one in /images
 -   search with highlighted text included
     -   (<https://olivernn.github.io/moonwalkers/>)
     -   (<https://github.com/olivernn/moonwalkers/tree/master/docs>)
     -   (<https://github.com/olivernn/moonwalkers/blob/master/src/wrapper.js>)
     -   (<https://github.com/olivernn/moonwalkers/blob/master/src/main.js>)
+-   [CSS Code style](https://google.github.io/styleguide/htmlcssguide.html#CSS)
