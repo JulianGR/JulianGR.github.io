@@ -1,7 +1,5 @@
 # [juliangr.github.io](https://juliangr.github.io/)
 
-<iframe src='https://juliangr.github.io/'><iframe>
-
 ### Local development
 
 Download and install all of the [jekyll](https://jekyllrb.com/docs/) environment
