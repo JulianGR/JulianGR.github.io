@@ -23,12 +23,11 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## [WIP] //TODO
 
 -   Asynchronous call to the quotes function
--   Clean & Minify CSS
+-   Clean  CSS
 -   Random SVG Header
 -   Inspiration for this blog
--   Minify HTML in build
--   <https://blog.webjeda.com/compress-html-jekyll/>
 -   Responsive
+-   <https://blog.webjeda.com/optimize-jekyll-seo/>
 -   all styles from html to the css
 -   photo like the one in /images
 -   search with highlighted text included
