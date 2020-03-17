@@ -4,18 +4,8 @@ $blue: #2471a3;
 $red: #e64636;
 $black: #000;
 $darkGray: #222;
-$white: #fff; //Nicolas Gallagher"s micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-
-.clearfix:after,
-.clearfix:before {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
+$white: #fff;
+$containerWidth: 95%;
 
 html {
   font-size: 100%;
@@ -27,6 +17,12 @@ html {
 body {
   overflow: visible!important;
   height: 100%;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: $containerWidth!important;
+  }
 }
 
 h1,
@@ -59,14 +55,10 @@ h6 {
   }
 }
 
-a {
-  color: $blue;
-}
-
 .postHeader {
   background-color: $darkGray;
   color: $white;
-  padding: .4rem .5rem .001rem;
+  padding: 0.4rem 0.5rem 0.001rem;
 
   a {
     color: $white;
@@ -91,29 +83,18 @@ a {
 
 .postContent {
   background-color: $white;
-  padding: .4rem .5rem .5rem;
+  padding: 0.4rem 0.5rem 0.5rem;
 
   p {
-    margin-bottom: .1rem;
+    margin-bottom: 0.1rem;
   }
 
   .linkToRight {
     float: right;
   }
 
-  ul {
-    margin-left: 2rem;
-    list-style: initial;
-  }
-
-  ol {
-    margin-left: 2rem;
-    list-style: decimal;
-    list-style-type: decimal;
-  }
-
   blockquote {
-    padding: .5rem;
+    padding: 0.5rem;
     border-left: 5px solid #eee;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -130,7 +111,7 @@ a {
   }
 
   pre {
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f5f5f5;
@@ -144,7 +125,7 @@ a {
 
   td,
   th {
-    padding: .75rem;
+    padding: 0.75rem;
     vertical-align: top;
     border: 1px solid #dee2e6;
   }
@@ -166,11 +147,15 @@ a {
   }
 }
 
-.legal {
-  ul {
-    margin-left: 2rem;
-    list-style: initial;
-  }
+ul {
+  margin-left: 2rem;
+  list-style: initial;
+}
+
+ol {
+  margin-left: 2rem;
+  list-style: decimal;
+  list-style-type: decimal;
 }
 
 .fromIndex {
@@ -188,7 +173,7 @@ a {
 
 .featuredPostContent {
   background-color: $white;
-  padding: 1rem .2rem;
+  padding: 1rem 0.2rem;
 }
 
 .featurePostImage {
@@ -212,11 +197,6 @@ a {
 
 .showSearchResult {
   display: flex!important;
-
-  ul {
-    margin-left: 2rem;
-    list-style: initial;
-  }
 }
 
 form {
@@ -259,13 +239,47 @@ body {
   background-repeat: no-repeat;
   color: $black;
 }
+///
+/// Viewport sized typography with minimum and maximum values
+///
+/// @author Eduardo Boucas (@eduardoboucas)
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback),
+///                 minumum of 35px and maximum of 150px
+///  @include responsive-font(5vw, 35px, 150px, 50px);
+///
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  @if $fallback {
+    font-size: $fallback;
+  }
+  font-size: $responsive;
+}
 
 .headerTitle {
-  font-size: 5rem;
+  @include responsive-font(10vw, 40px, 100px);
   font-weight: 200;
   color: #fff;
   text-align: center;
-  padding: 2rem 3rem 2.75rem;
+  padding: 1rem 0.5rem 2rem;
   text-shadow: 1px 1px 0 #cccccc, 2px 2px 0 #c9c9c9, 3px 3px 0 #bbb, 4px 4px 0 #b9b9b9, 5px 5px 0 #aaa, 1px 1px 1px rgba(0,0,0,.1), 2px 2px 2px rgba(0,0,0,.1), 1px 1px 3px rgba(0,0,0,.2), 3px 3px 5px rgba(0,0,0,.2), 4px 4px 3px rgba(0,0,0,.3), 5px 5px 10px rgba(0,0,0,.3), 6px 6px 5px rgba(0,0,0,.4), 7px 7px 10px rgba(0,0,0,.4), 8px 8px 10px rgba(0,0,0,.5), 9px 9px 20px rgba(0,0,0,.5), 10px 10px 10px rgba(0,0,0,.6);
 
   a {
@@ -277,9 +291,10 @@ body {
     text-decoration: none;
   }
 }
-///////////
-//BUTTONS//
-///////////
+@media (max-width: 768px) {}
+@media (max-width: 520px) {}
+@media (max-width: 425px) {}
+//BUTTONS
 //buttons inspiration for future css boredom
 //https://css-tricks.com/direction-aware-hover-effects/
 //https://freefrontend.com/css-button-hover-effects/
@@ -310,7 +325,8 @@ button {
 
 button:hover {
   color: currentColor;
-  background: $red; //  box-shadow: 4px 4px 0 #555;
+  background: $red;
+  //  box-shadow: 4px 4px 0 #555;
 }
 
 button:active {
@@ -321,9 +337,7 @@ button:active {
   text-decoration: none;
   color: $white;
 }
-//////////
 //FOOTER//
-//////////
 
 footer {
   width: 100%;
@@ -359,6 +373,12 @@ footer {
 .footerMiddle {
   font-size: small;
   text-align: center;
+  overflow: hidden;
+
+  .quoteDiv {
+    //display: flex;
+    overflow: hidden;
+  }
 
   .imgRefreshQuote {
     height: 1rem;
@@ -389,6 +409,7 @@ footer {
 
 .footerRight {
   a {
+    text-align: right;
     float: right;
   }
 }
@@ -396,13 +417,7 @@ footer {
 .upperRow {
   margin-bottom: 1rem;
 }
-
-#showQuote {
-  display: inline-block;
-}
-/////////////////////
-//SYNTAX highlight//
-////////////////////
+//SYNTAX highlight
 
 .highlight .hll {
   background-color: #ffc;
@@ -710,9 +725,7 @@ footer {
   color: #f60;
 }
 /* Literal.Number.Integer.Long */
-/////////////
 //SVG ICONS//
-/////////////
 
 .svg-icon {
   width: 40px;
