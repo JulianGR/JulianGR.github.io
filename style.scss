@@ -157,6 +157,7 @@ h6 {
     font-size: small;
     color: $white;
     font-weight: normal;
+    text-align: right;
   }
 }
 
@@ -488,8 +489,9 @@ footer {
     box-shadow: none;
   }
 
-  button:active {
+  button:active, button:focus, button:visited:focus-within, img:focus, img:focus-within, img:active {
     box-shadow: none;
+    outline: 0;
   }
 }
 
