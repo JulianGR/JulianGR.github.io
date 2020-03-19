@@ -17,10 +17,16 @@
 
     <!-- navbar -->
     <div class="row" id="navbar">
-      <nav class="nav nav-pills nav-fill nav-justified" style="width:100%;">
-        <a class="nav-item homeButton withoutDecoration" href="{{ site.baseurl }}/"><button id="home" class="buttonActive" style="display: block;width: 100%;">Home</button></a>
-        <a class="nav-item withoutDecoration" href="{{ site.baseurl }}/postsList"><button id="postsList" style="display: block;width: 100%;">Posts List</button></a>
-        <a class="nav-item aboutButton withoutDecoration" href="{{ site.baseurl }}/about"><button id="about" style="display: block;width: 100%;">About</button></a>
+      <nav class="nav nav-pills nav-fill nav-justified">
+        <div class='col colExpandHome'>
+          <a class="nav-item homeButton withoutDecoration" href="{{ site.baseurl }}/"><button id="home" class="buttonActive">Home</button></a>
+        </div>
+        <div class='col colExpandArchive'>
+          <a class="nav-item withoutDecoration" href="{{ site.baseurl }}/archive"><button id="archive">Archive</button></a>
+        </div>
+        <div class='col-4 colExpandAbout'>
+          <a class="nav-item aboutButton withoutDecoration" href="{{ site.baseurl }}/about"><button id="about">About</button></a>
+        </div>
       </nav>
       <noscript>Some functions may not work if you have JavaScript disabled</noscript>
 
@@ -31,14 +37,17 @@
 
     <div class="row">
       <!-- MAIN -->
-      <div class="col-8">
+      <div class="col-md-8" id="main">
         {{content}}
+        <br>
       </div>
+
+
       <!-- SIDEBAR -->
-      <div class="col-4">
+      <div class="col-md-4" id="sidebar">
         <!-- Featured Posts -->
-        <div class="row">
-          <div class="border" style="width: 100%;">
+        <div class="row" id="featuredPosts">
+          <div class="border">
             <div class="postHeader">
               <h1>FEATURED POSTS</h1>
             </div>
@@ -60,12 +69,12 @@
 
         <br>
         <!-- Search -->
-        <div class="row">
-          <form class="border" method="get" id="site_search" style="width: 100%;">
+        <div class="row" id="serch">
+          <form class="border" method="get" id="site_search">
             <div class="input-group">
               <div class="input-group-prepend">
                 <button onclick="showSearchResult();" type="submit">
-                  <img src="{{ site.baseurl }}/assets/search.svg" alt="search icon" style="width:15px;">
+                  <img src="{{ site.baseurl }}/assets/search.svg" id="searchIcon" alt="search icon">
                 </button>
               </div>
               <input class="form-control my-0 py-1" type="text" placeholder="Search" id="search_box" aria-label="Search">
@@ -75,7 +84,7 @@
         <br>
 
         <div class="row" id="showSearchResult">
-          <div class="border" style="width: 100%;">
+          <div class="border">
             <div class="postHeader">
               <h1>Search results</h1>
               <h6>Posts in which your query appears</h6>

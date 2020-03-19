@@ -8,7 +8,6 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}"">{{ post.title }}</a></h1>
       <h6>Posted on {{ post.date | date: "%d %B %Y" }}<h6>
       </div>
-
       <div class=" postContent fromIndex">
 
           {% if post.image != nil and post.image != "" and post.image != blank %}
@@ -19,17 +18,10 @@ layout: default
           <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
 
           <a class="linkToRight" href="{{ site.baseurl }}{{ post.url }}">Continue reading</a>
-
     </div>
-
   </div>
-
-
-
 </article>
 <br>
 {% endfor %}
 
-
-
-<a href="{{ site.baseurl }}/postsList" class="withoutDecoration"><button style="display: block;width: 100%;">Older Posts</button></a>
+<a href="{{ site.baseurl }}/archive" class="withoutDecoration bigButton"><button>Older Posts</button></a>

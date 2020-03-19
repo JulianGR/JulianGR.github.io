@@ -24,10 +24,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 -   Asynchronous call to the quotes function
 -   Clean CSS
--   <https://grid-grail.glitch.me/>
--   <https://github.com/SamsungInternet/examples/blob/master/holy-grail-layout-grid/index.html>
--   <https://github.com/SamsungInternet/examples/blob/master/holy-grail-layout-grid/styles.css>
--   Responsive
 -   Random SVG Header
 -   <https://blog.webjeda.com/optimize-jekyll-seo/>
 -   all styles from html to the css

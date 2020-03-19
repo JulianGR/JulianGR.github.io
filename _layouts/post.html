@@ -4,7 +4,7 @@ comments: true
 ---
 <script>
   document.getElementById("home").classList.remove("buttonActive");
-  document.getElementById("postsList").classList.remove("buttonActive");
+  document.getElementById("archive").classList.remove("buttonActive");
   document.getElementById("about").classList.remove("buttonActive");
 </script>
 <article>
@@ -24,6 +24,6 @@ comments: true
 </article>
 <br>
 
-<a href="{{ site.baseurl }}/postsList" class="withoutDecoration"><button style="display: block;width: 100%;">More Posts</button></a>
+<a href="{{ site.baseurl }}/archive" class="withoutDecoration bigButton"><button>More Posts</button></a>
 <br>
 {% include disqus.html %}
