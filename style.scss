@@ -1,4 +1,6 @@
 ---
+sitemap:
+  exclude:'yes' 
 ---
 $blue: #2471a3;
 $red: #e64636;
@@ -83,6 +85,14 @@ body {
   .nav {
     padding-left: 0;
   }
+
+  #about {
+    margin-bottom: 20px;
+  }
+}
+
+.row {
+  margin-left: -10px;
 }
 
 .colExpandHome {
@@ -91,6 +101,7 @@ body {
 
 .colExpandArchive {
   padding-left: 0;
+  margin-right: 5px!important;
 }
 
 .colExpandAbout {
@@ -489,7 +500,12 @@ footer {
     box-shadow: none;
   }
 
-  button:active, button:focus, button:visited:focus-within, img:focus, img:focus-within, img:active {
+  button:active,
+  button:focus,
+  button:visited:focus-within,
+  img:active,
+  img:focus,
+  img:focus-within {
     box-shadow: none;
     outline: 0;
   }

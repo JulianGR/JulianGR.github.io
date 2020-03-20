@@ -3,6 +3,8 @@ layout: post
 title: Sample title
 image: ./images/XYZ.jpg
 altAndTitle: Sample alt and title (title FROM main image)
+sitemap:
+  exclude: 'yes'
 ---
 IMAGES OF  650 x 210 px
 

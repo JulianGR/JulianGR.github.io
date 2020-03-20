@@ -1,8 +1,5 @@
 The MIT License (MIT)
 
-While not appearing as forked, I am using Jekyll-now from Barry Clark, and
-Bootstrap. Therefore, for simplifying I keep the same licenses.
-
 Copyright (c) 2020 Julián Gómez Rodríguez
 
 Copyright (c) 2015 Barry Clark
