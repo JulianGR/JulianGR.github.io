@@ -15,7 +15,7 @@ layout: default
       {% else  %}
       {% endif %}
 
-      <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
+      <p>{{ post.content | truncatewords: 50 }}</p>
 
       <a class="linkToRight" href="{{ site.baseurl }}{{ post.url }}">Continue reading</a>
     </div>

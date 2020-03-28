@@ -24,9 +24,13 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 -   Asynchronous call to the quotes function
 -   Random SVG Header
--   photo like the one in /images (effect of atom web)
 -   search with highlighted text included
     -   (<https://olivernn.github.io/moonwalkers/>)
     -   (<https://github.com/olivernn/moonwalkers/tree/master/docs>)
     -   (<https://github.com/olivernn/moonwalkers/blob/master/src/wrapper.js>)
     -   (<https://github.com/olivernn/moonwalkers/blob/master/src/main.js>)
+
+- enlaces con about:blank
+- capitalize first letter
+- lista wapa esa
+- css de un post (espacio debajo de la foto, los <br> de los párrafos, la firma a la izq...)
