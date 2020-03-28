@@ -30,7 +30,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
     -   (<https://github.com/olivernn/moonwalkers/blob/master/src/wrapper.js>)
     -   (<https://github.com/olivernn/moonwalkers/blob/master/src/main.js>)
 
-- enlaces con about:blank
-- capitalize first letter
-- lista wapa esa
-- css de un post (espacio debajo de la foto, los <br> de los párrafos, la firma a la izq...)
+- links with about:blank

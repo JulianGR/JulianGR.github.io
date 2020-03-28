@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-image: ./images/helloWorld.png
+image: ./images/helloWorldPhoto.png
 altAndTitle: Hello World
 ---
 
