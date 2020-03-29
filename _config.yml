@@ -33,6 +33,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-target-blank
 
 plugins:
   - jekyll-target-blank
@@ -43,6 +44,5 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - .aboutPhoto.psd
   - Thumbs.db
   - _Thumbs.db
