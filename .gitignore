@@ -10,4 +10,5 @@ Gemfile.lock
 node_modules
 package.json
 .aboutPhoto.psd
-_drafts
+Thumbs.db
+_Thumbs.db

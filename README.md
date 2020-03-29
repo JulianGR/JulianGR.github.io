@@ -14,7 +14,7 @@ Download and install all of the [jekyll](https://jekyllrb.com/docs/) environment
 
 ### Contributing
 
-Since this is my personal blog, contributing is closed. However, feel free to open an [Issue](https://github.com/JulianGR/JulianGR.github.io/issues/new) if you think something is broken or could be improved.
+Feel free to open an [Issue](https://github.com/JulianGR/JulianGR.github.io/issues/new) if you think something is broken or could be improved.
 
 ### License
 
@@ -29,5 +29,3 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
     -   (<https://github.com/olivernn/moonwalkers/tree/master/docs>)
     -   (<https://github.com/olivernn/moonwalkers/blob/master/src/wrapper.js>)
     -   (<https://github.com/olivernn/moonwalkers/blob/master/src/main.js>)
-
-- links with about:blank
