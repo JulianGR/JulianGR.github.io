@@ -20,25 +20,24 @@
   <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
   <meta name="twitter:description" content="Personal blog from JulianGR">
 
+  <meta property="profile:first_name" content="Julian" />
+  <meta property="profile:last_name" content="Gomez" />
+  <meta property="profile:username" content="JulianGR" />
+
   <link rel="canonical" href="https://juliangr.github.io/">
 
   <!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-  <!--TODO:
-<link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png">
-<link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png">
-<link rel="apple-touch-icon" href="/img/icon-196x196.png">
+  <link rel="icon" href="{{site.baseurl}}/assets/img/favicon-32.ico" sizes="32x32">
+  <link rel="icon" href="{{site.baseurl}}/assets/img/favicon-128.ico" sizes="128x128">
+  <link rel="icon" href="{{site.baseurl}}/assets/img/favicon-192.ico" sizes="192x192">
 
--->
-  <link rel="icon" href="{{site.baseurl}}/assets/favicon.ico">
-
-
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/reset.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reset.css">
 
   <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Bootstrap CSS local fallback -->
   <script>
     var test = document.createElement("div")
@@ -53,7 +52,7 @@
 
       link.type = "text/css";
       link.rel = "stylesheet";
-      link.href = "{{site.baseurl}}/assets/fallback/bootstrap.min.css";
+      link.href = "{{site.baseurl}}/assets/fallback/css/bootstrap.min.css";
 
       document.head.appendChild(link);
     }
@@ -61,7 +60,7 @@
 
   <!-- Google Fonts CDN -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&display=swap" rel="stylesheet"/>
   <!-- Google Fonts local fallback -->
   <script>
     var test = document.createElement("div")
@@ -75,24 +74,26 @@
       var link = document.createElement("link");
 
       link.rel = "stylesheet";
-      link.href = "{{site.baseurl}}/assets/fallback/montserrat.css";
+      link.href = "{{site.baseurl}}/assets/fallback/fonts/monstserrat/montserrat.css";
 
       document.head.appendChild(link);
 
       var link = document.createElement("link");
 
       link.rel = "stylesheet";
-      link.href = "{{site.baseurl}}/assets/fallback/arimo.css";
+      link.href = "{{site.baseurl}}/assets/fallback/font/arimo/arimo.css";
 
       document.head.appendChild(link);
     }
   </script>
-  <link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 
+  <link rel="preconnect" href="https://www.google.com" />
+  <link rel="dns-prefetch" href="https://www.google.com" />
   <!-- Google Analytics -->
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-  <script>
+  <script async>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
       i[r] = i[r] || function() {

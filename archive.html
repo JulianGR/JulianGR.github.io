@@ -7,8 +7,8 @@ layout: default
   document.getElementById("about").classList.remove("buttonActive");
 </script>
 
-<h2>Sort posts by...</h2>
-<br />
+<h2 class="sortPosts">Sort posts by...</h2>
+
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-category-tab" data-toggle="tab" href="#nav-category" role="tab" aria-controls="nav-category" aria-selected="true">Category</a>
@@ -19,10 +19,9 @@ layout: default
   <div class="tab-pane fade show active" id="nav-category" role="tabpanel" aria-labelledby="nav-category-tab">
 
     <!-- Category-->
-    <br>
-    <h5>(Still empty)</h5>
+    <h5 class="category">(Still empty)</h5>
     <!--
-    <h5>Category 1</h5>
+    <h5 class="category">Category 1</h5>
 
     <table class="table table-sm table-borderless">
       <tbody>
@@ -35,13 +34,8 @@ layout: default
           <td><a href="">BlaBlaBlaBlaBla BlaBlaBla Bla </a></td>
         </tr>
     </table>
-
-    <br>
-    <br>
 
     <h5>Category 2</h5>
-
-
     <table class="table table-sm table-borderless">
       <tbody>
         <tr>
@@ -53,18 +47,13 @@ layout: default
           <td><a href="">BlaBlaBlaBlaBla BlaBlaBla Bla </a></td>
         </tr>
     </table>
-
 -->
 
   </div>
   <div class="tab-pane fade" id="nav-year" role="tabpanel" aria-labelledby="nav-year-tab">
     <!-- Year-->
-
-    <br>
     <!--
     <h5>Year in review</h5>
-
-
     <table class="table table-sm table-borderless">
       <tbody>
         <tr>
@@ -76,13 +65,8 @@ layout: default
           <td><a href="">BlaBlaBlaBlaBla BlaBlaBla Bla </a></td>
         </tr>
     </table>
-
-    <br />
-    <br />
 -->
-    <h5>2020</h5>
-
-
+    <h5 class="category">2020</h5>
     <table class="table table-sm table-borderless">
       <tbody>
         <!--
@@ -94,9 +78,6 @@ layout: default
           <th scope="row">Mar 2020</th>
           <td><a href="https://juliangr.github.io/Hello-World/">Hello world</a></td>
         </tr>
-
     </table>
-
-
   </div>
 </div>

@@ -22,8 +22,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## [WIP] //TODO: Ideas for the future
 
--   Asynchronous call to the quotes function
--   Random SVG Header
 -   search with highlighted text included
     -   (<https://olivernn.github.io/moonwalkers/>)
     -   (<https://github.com/olivernn/moonwalkers/tree/master/docs>)
