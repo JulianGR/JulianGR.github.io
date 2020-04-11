@@ -1,5 +1,5 @@
-<p align="center">
-[juliangr.github.io](https://juliangr.github.io/)
+<p align="center" style="font-size: 96px;">
+<a href="https://juliangr.github.io/">juliangr.github.io</a>
 </p>
 
 <p align="center">
