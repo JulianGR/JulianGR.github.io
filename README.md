@@ -1,6 +1,4 @@
-<p align="center" style="font-size: 96px;">
-<a href="https://juliangr.github.io/">juliangr.github.io</a>
-</p>
+# [juliangr.github.io](https://juliangr.github.io/)
 
 <p align="center">
   <img src="https://github.com/JulianGR/JulianGR.github.io/blob/master/assets/img/previewBlog.png">
