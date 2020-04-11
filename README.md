@@ -1,9 +1,9 @@
 <p align="center">
-# [juliangr.github.io](https://juliangr.github.io/)
+[juliangr.github.io](https://juliangr.github.io/)
 </p>
 
 <p align="center">
-  <img src="TODO">
+  <img src="https://github.com/JulianGR/JulianGR.github.io/blob/master/assets/img/previewBlog.png">
 </p>
 
 ## Local development
