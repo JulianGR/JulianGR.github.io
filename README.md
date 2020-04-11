@@ -1,10 +1,16 @@
+<p align="center">
 # [juliangr.github.io](https://juliangr.github.io/)
+</p>
 
-### Local development
+<p align="center">
+  <img src="TODO">
+</p>
+
+## Local development
 
 Download and install all of the [jekyll](https://jekyllrb.com/docs/) environment
 
-### Built With
+## Built With
 
 -   [Jekyll](https://jekyllrb.com/) - Static blog framework
 -   [GitHub Pages](https://pages.github.com/) - Hosting
@@ -12,11 +18,11 @@ Download and install all of the [jekyll](https://jekyllrb.com/docs/) environment
 -   [Lunr.js](https://lunrjs.com/) - Pure client post search with JavaScript
 -   Patience, a lot of patience...
 
-### Contributing
+## Contributing
 
 Feel free to open an [Issue](https://github.com/JulianGR/JulianGR.github.io/issues/new) if you think something is broken or could be improved.
 
-### License
+## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
