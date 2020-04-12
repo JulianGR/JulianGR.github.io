@@ -23,15 +23,11 @@ body {
   overflow: visible!important;
   height: 100%;
   font-size: 1.1em;
-  background-image: url({{ site.baseurl }}/assets/img/header.png);
+  background-image: url({{ site.baseurl }}/assets/img/header.webp);
   background-repeat: no-repeat;
   color: $black;
 }
-@media (max-width: 992px) {
-  .container {
-    max-width: 95%!important;
-  }
-}
+
 @media (max-width: 767px) {
   #sidebar {
     margin-top: 15px;
@@ -49,12 +45,6 @@ body {
 }
 @media (max-width:575px) {
   #navbar {
-    .col {
-      -ms-flex: 0 0 66.666667%;
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-
     .colExpandHome {
       margin-left: 0;
       padding-left: 0;
@@ -513,8 +503,8 @@ Footer
   flex-shrink: 0;
 
   .imgRefreshQuote {
-    height: 1rem;
-    width: 1rem;
+    height: 32px;
+    width: 32px;
     border: 0;
     background: 0 0;
     color: $white;

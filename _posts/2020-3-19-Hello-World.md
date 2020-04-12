@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-image: ./images/helloWorldPhoto.png
+image: ./images/helloWorldPhoto.webp
 altAndTitle: Hello World
 ---
 
@@ -11,7 +11,7 @@ This is it, I'm officially a blogger. **I am sick of not being blogger**. I happ
 
 -   My name is Julián (Jules for friends). Apart from being my name, it's a [town](https://en.wikipedia.org/wiki/Julian,_California) in US. Alternatively you can have a laugh at the [Urban Dictionary page](https://www.urbandictionary.com/define.php?term=Julian).
 -   I'm from Spain (thus the accent in the **á**), specifically from a beautiful city in the south, Sevilla.
--   I'm studying third year of Computer Science.
+-   At the time I'm writing this, I'm studying third year of Computer Science.
 -   You can look at a picture of me in the [About page](https://juliangr.github.io/about/).
 
 ##### Why this blog?

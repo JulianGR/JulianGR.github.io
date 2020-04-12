@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /legal/
+Noindex: /legal/
+Disallow: /404/
+Noindex: /404/
+Disallow: /search_data.json
+Noindex: /search_data.json
+
+Sitemap: https://juliangr.github.io/sitemap.xml
