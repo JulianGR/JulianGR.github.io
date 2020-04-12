@@ -8,6 +8,8 @@ sitemap:
 ---
 IMAGES OF  650 x 210 px
 
+When posting: check if its gonna be featured, then add it to the Archive
+
 # h1 Heading
 ## h2 Heading
 ### h3 Heading

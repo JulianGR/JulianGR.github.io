@@ -22,12 +22,4 @@ Feel free to open an [Issue](https://github.com/JulianGR/JulianGR.github.io/issu
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-## [WIP] //TODO: Ideas for the future
-
--   search with highlighted text included
-    -   (<https://olivernn.github.io/moonwalkers/>)
-    -   (<https://github.com/olivernn/moonwalkers/tree/master/docs>)
-    -   (<https://github.com/olivernn/moonwalkers/blob/master/src/wrapper.js>)
-    -   (<https://github.com/olivernn/moonwalkers/blob/master/src/main.js>)
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/JulianGR/JulianGR.github.io/blob/master/LICENSE.md) file for details
