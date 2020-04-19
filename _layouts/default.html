@@ -49,7 +49,7 @@
               </div>
 
               <div class="featurePostImage middleFeature">
-                <a href="TODO"><img class="img-fluid mx-auto d-block" alt="" src=""></a>
+                <a href="{{site.baseurl}}/How-I-made-Vigisur-es/"><img class="img-fluid mx-auto d-block" alt="How I made Vigisur.es" title="How I made Vigisur.es" src="{{site.baseurl}}/images/vigisurCurrent.webp)"></a>
               </div>
 
               <div class="featurePostImage">
@@ -134,7 +134,7 @@
   <script async>
     function getQuote() {
 
-      $.get("../quotes", null, function(text) {
+      $.get("../quotes/", null, function(text) {
 
         var quotesObject = $(text).find(".quote").toArray();
         var quotesArray = Array.from(quotesObject, x => x.innerHTML);
