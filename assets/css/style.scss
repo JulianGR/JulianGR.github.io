@@ -7,9 +7,10 @@ $red: #e64636;
 $black: #000;
 $darkGray: #262626;
 $white: #fff;
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 General layout and navigation
 --------------------------------------------------------------*/
+
 html {
   font-size: 100%;
   overflow: visible!important;
@@ -27,7 +28,6 @@ body {
   background-repeat: no-repeat;
   color: $black;
 }
-
 @media (max-width: 767px) {
   #sidebar {
     margin-top: 15px;
@@ -205,6 +205,7 @@ Header
 /*--------------------------------------------------------------
 Posts
 --------------------------------------------------------------*/
+
 h1,
 h2,
 h3,
@@ -248,6 +249,11 @@ h6 {
 .postContent {
   background-color: $white;
   padding: 0.4rem 1rem 0.5rem;
+  word-break: break-word;
+
+  em {
+    font-style: italic;
+  }
 
   p {
     margin-bottom: 2rem;
@@ -361,7 +367,7 @@ article {
   align-self: center;
 }
 
-#featuredPostsHeader{
+#featuredPostsHeader {
   padding-bottom: 21px;
 }
 
@@ -423,6 +429,7 @@ form {
 /*--------------------------------------------------------------
 Buttons
 --------------------------------------------------------------*/
+
 button {
   border: 5px solid $red;
   background: $white;
@@ -436,10 +443,9 @@ button {
   transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
-
 button:active,
 button:focus,
-button:visited:focus-within{
+button:visited:focus-within {
   box-shadow: none!important;
   outline: 0!important;
 }
@@ -494,6 +500,7 @@ a {
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
+
 #footer {
   width: 100%;
   margin: 20px 0 0;
@@ -544,6 +551,7 @@ Footer
 /*--------------------------------------------------------------
 Icons
 --------------------------------------------------------------*/
+
 .icon {
   margin-left: 3px;
   margin-right: 3px;
