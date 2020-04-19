@@ -252,8 +252,13 @@ h6 {
   word-break: break-word;
 
   em {
-    font-style: italic;
+    font-style: italic!important;
   }
+
+.imgFoot{
+  text-align: center;
+}
+
 
   p {
     margin-bottom: 2rem;
@@ -328,7 +333,7 @@ h6 {
   }
 
   img {
-    max-width: 35%;
+    max-width: 95%;
   }
 }
 

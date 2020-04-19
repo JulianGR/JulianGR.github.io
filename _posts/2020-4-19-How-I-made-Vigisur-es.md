@@ -12,14 +12,14 @@ So yeah, I made [vigisur.es](https://vigisur.es). It wasn’t particularly diffi
 The owner of the business is my aunt. Working with relatives is more often than not an advantage, but it also has its downsides (often they are the same, such as having _way too much confidence_ in expressing a different point of view). The thing is, my aunt told me to build her a proper website for her emerging business. I leave you here a screenshot of the first version of the web, so judge by yourself. If you think it was the ugliest web of the entire planet, welcome to the club.
 
 ![vigisurVers1](../images/vigisurVers1.webp)
-_Figure 1: first version of the web._
+ [_Figure 1: first version of the web._]{:class="imgFoot"}
 
 It turns out that the web was made by a friend of her that knew a little bit of "computers" - but nothing about design, clearly. The guy also managed to host the web in a French company called OVH which is the only thing I decided to maintain until now.
 
 Back in 2018, I designed a completely new web with Adobe Muse. Ah, the good-old days before joining university. I didn't how to write HTML so I took the graphical way, and sure it improved the look (hard not to), but as I see it right now it was kind of a disaster from the usability point of view. I tried to puta  way-back machine link but snapshots doesn't seem to be working. Fun fact: this website got me a Spa session by my dear aunt, her ways of paying favors.
 
 ![vigisurVers2](../images/vigisurVers2.webp)
-_Figure 2: second version of the web._
+[_Figure 2: second version of the web._]{:class="imgFoot"}
 
 # Current website
 
@@ -34,7 +34,7 @@ I started off with asking her what she wanted and the answer was "something simp
 If you check them out, you can see that there are elements of the three of them. [Bootstrap made](https://bootstrapmade.com/) *forces* you to leave the link to their web and while I could've removed it, it didn't seem ethical for me, and there is no point in hiding the templates you use.
 
 ![vigisurCurrent](../images/vigisurCurrent.webp)
-_Figure 3: current version of the web._
+[_Figure 3: current version of the web._]{:class="imgFoot"}
 
 ## Technical decisions
 
@@ -44,7 +44,7 @@ From the **DevOps** perspective, OVH has a very simple and intuitive user interf
 
 From the **design** perspective, I decided to clean up the logo and the branding letters with Photoshop and vectorize them for future enlargement. The web uses some of the photos the templates provide in addition to pictures my aunt provided. Tip: if you need attractive images for a web, try at all costs to go with the customer and shoot some pictures with a good camera: they will drastically improve the quality of the site. The other option is to use stock photos, which aren't as powerful branding as self-made pictures.
 
-I opted for Opens Sans and Monserrat for the typography and consisted colors (the palette consists in [#009933]{:color="#009933"} for green, [#3BBD67]{:color="#3BBD67"} for light green and no more than shades of grey). Bootstrap is used as main CSS framework.
+I opted for Opens Sans and Monserrat for the typography and consisted colors (the palette consists in [#009933]{:style="color=#009933;"} for green, [#3BBD67]{:style="color=#3BBD67;"} for light green and no more than shades of grey). Bootstrap is used as main CSS framework.
 
 From the **code** perspective, the templated followed good designs patterns that I chose to continue, such as using IDs for bigger sections such as the "Nuestros clientes" section or the "Contacto" one, and then using these IDs for the selectors inside:
 
@@ -92,7 +92,7 @@ Note the first three lines, since they are a gotcha's for many *.htacess* files.
 A fun project to do in these quarantined days. I didn't learn a lot since I already knew most of the things, but the *.htaccess* file was completely new for me. Unfortunately, I can't show much more of that file since it contains sensitive data that shouldn't be exposed. The web page got a fairly good grade in Lightshot (from the Chrome Developer tab), all **As** in [webpagetest.org](https://www.webpagetest.org/) and I used also [Woorank](https://www.woorank.com/es) for the SEO. The latter has to be taken with a grain of salt because it gives bad marks for not having external Facebooks links for instance, stuff that a humble web developer can only little influence. Before the development of this new version, the web had roughly 10/ 12 users per day, and **now it scalated up to 40**, and it's only the beginning since the web hasn't been crawled yet!
 
 ![vigisurAnalytics](../images/vigisurAnalytics.webp)
-_Figure 4: current version of the web._
+[_Figure 4: current version of the web._]{:class="imgFoot"}
 
 Fun fact 2: according to [a post in Quora](https://www.quora.com/What-is-a-reasonable-price-to-pay-for-a-strong-landing-page-design) and [webfx.com](https://www.webfx.com/How-much-should-web-site-cost.html#calculator) this webpage would cost around 1000€ and 6000€, a more than optimistic amount of money, which I probably would set in about ~400€. But hey, nothing is worthier than a sincere "thank you" from your auntie, right?
 
