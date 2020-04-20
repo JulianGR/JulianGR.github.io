@@ -16,7 +16,7 @@ The owner of the business is my aunt. Working with relatives is more often than 
 
 It turns out that the web was made by a friend of her that knew a little bit of "computers" - but nothing about design, clearly. The guy also managed to host the web in a French company called OVH which is the only thing I decided to maintain until now.
 
-Back in 2018, I designed a completely new web with Adobe Muse. Ah, the good-old days before joining university. I didn't how to write HTML so I took the graphical way, and sure it improved the look (hard not to), but as I see it right now it was kind of a disaster from the usability point of view. I tried to puta  way-back machine link but snapshots doesn't seem to be working. Fun fact: this website got me a Spa session by my dear aunt, her ways of paying favors.
+Back in 2018, I designed a completely new web with Adobe Muse. Ah, the good-old days before joining university. I didn't how to write HTML so I took the graphical way, and sure it improved the look (hard not to), but as I see it right now it was kind of a disaster from the usability point of view. I tried to put a  way-back machine link but snapshots doesn't seem to be working. Fun fact: this website got me a Spa session by my dear aunt, her ways of paying favors.
 
 ![vigisurVers2](../images/vigisurVers2.webp)
 _Figure 2: second version of the web._{:.text-center}
