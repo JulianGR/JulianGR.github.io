@@ -5,7 +5,7 @@ image: ./images/vigisurCurrent.webp
 altAndTitle: How I made Vigisur.es
 ---
 
-So yeah, I made [vigisur.es](https://vigisur.es). It wasn’t particularly difficult and I had a great time doing it. As the time writing this post, half of the world is locked down, and I decided to take a look and the web and see what could be improved - spoiler: lots of things. As a disclaimer, the website is in Spanish, so if you enter the website (which I encourage you to do so for understanding what I'm talking about), don't panic.
+So yeah, I made [vigisur.es](https://vigisur.es). It wasn’t particularly difficult and I had a great time doing it. As the time writing this post, half of the world is locked down, and I decided to take a look and the web and see what could be improved - spoiler: lots of things. As a disclaimer, the website is in Spanish, so if you check it out (which I encourage you to do so for understanding what I'm talking about), don't panic.
 
 # Previous versions
 
@@ -14,18 +14,18 @@ The owner of the business is my aunt. Working with relatives is more often than 
 ![vigisurVers1](../images/vigisurVers1.webp)
  _Figure 1: first version of the web._{:.text-center}
 
-It turns out that the web was made by a friend of her that knew a little bit of "computers" - but nothing about design, clearly. The guy also managed to host the web in a French company called OVH which is the only thing I decided to maintain until now.
+It turns out that the web was made by a friend of hers that knew a little bit of "computers" - but nothing about design, clearly. The guy also managed to host the web in a French company called OVH which is the only thing I decided to maintain until now.
 
-Back in 2018, I designed a completely new web with Adobe Muse. Ah, the good-old days before joining university. I didn't how to write HTML so I took the graphical way, and sure it improved the look (hard not to), but as I see it right now it was kind of a disaster from the usability point of view. I tried to put a  way-back machine link but snapshots doesn't seem to be working. Fun fact: this website got me a Spa session by my dear aunt, her ways of paying favors.
+Back in 2018, I designed a completely new web with Adobe Muse. Ah, the good-old days before joining university. I didn't know how to write HTML so I took the graphical way, and sure it improved the look (hard not to), but as I see it right now it was kind of a disaster from the functional point of view. I tried to put a  way-back machine link but snapshots don't seem to be working. Fun fact: this website got me a Spa session by my dear aunt, that is her ways of paying favours.
 
 ![vigisurVers2](../images/vigisurVers2.webp)
 _Figure 2: second version of the web._{:.text-center}
 
 # Current website
 
-I started off with asking her what she wanted and the answer was "something simple yet convincing". So, I began with templates. One of the downsides of creating a web on your own means that you have to be like *a unicorn*: I had to do the job that a designer, marketing and SEO analyst, programmer, DevOps and QA engineer would do, but I'm fine with all of that as long as the project isn't very big. I asked her if I could release the source code, and while she didn't tell me not to, she didn't sound very convincing so I will assume that I can publish some parts and talk about them, but not the whole codebase.
+I started off with asking her what she wanted and the answer was "something simple, yet convincing". So, I began with templates. One of the downsides of creating a web on your own means that you have to be like *a unicorn*: I had to do the job that a designer, marketing and SEO analyst, programmer, DevOps and QA engineer would do, but I'm fine with all of that as long as the project isn't very big. I asked her if I could release the source code, and while she didn't tell me not to, she didn't sound very convincing so I will assume that I can publish some parts and talk about them, but not the whole codebase.
 
- I decided using a template because this site is very very static - so static that it's not dynamic at all - and usually templates don't work fine with webs with a lot of functionality such as user's login, dashboards and so on; and also because the web needn't to be very customized and stricking: just "convincing". I used a remix of themes of [Bootstrap made](https://bootstrapmade.com/), specifically 3:
+ I decided using a template because this site is very very static - so static that it's not dynamic at all - and usually templates don't work fine with webs with a lot of functionality such as user's login, dashboards and so on. Besides, the web needn't to be very customized and striking: just "convincing". I used a remix of themes of [Bootstrap made](https://bootstrapmade.com/), specifically 3,
 
 -   [BizPage](https://bootstrapmade.com/bizpage-bootstrap-business-template/)
 -   [Squadfree](https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/)
