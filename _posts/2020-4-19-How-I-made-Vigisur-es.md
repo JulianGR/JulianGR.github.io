@@ -38,13 +38,13 @@ _Figure 3: current version of the web._{:.text-center}
 
 ## Technical decisions
 
-Let's begin the part in which I explained the choices I made for those who want to reproduce it, are learning web design and want to get inspired by my work or for those who are just interested.
+Let's begin with the part in which I explained the choices I made for those who want to reproduce it, are learning web design and want to get inspired by my work or for those who are just interested.
 
 From the **DevOps** perspective, OVH has a very simple and intuitive user interface, which makes managing very *easy peasy*. I changed the DNS configuration and also some hosting configuration  since the web was overall very insecure (DNSSEC disabled, PHP **4.3** (!!!!!!), old SSL certificates, and FTP enabled even when the web isn't in developing mode). OVH also provides email server and I added some spam rules since the inbox was full of it.
 
 From the **design** perspective, I decided to clean up the logo and the branding letters with Photoshop and vectorize them for future enlargement. The web uses some of the photos the templates provide in addition to pictures my aunt provided. Tip: if you need attractive images for a web, try at all costs to go with the customer and shoot some pictures with a good camera: they will drastically improve the quality of the site. The other option is to use stock photos, which aren't as powerful branding as self-made pictures.
 
-I opted for Opens Sans and Monserrat for the typography and consisted colors (the palette consists in #009933{:.green} for green, #3BBD67{:.light-green} for light green and no more than shades of grey). Bootstrap is used as main CSS framework.
+I opted for Opens Sans and Monserrat for the typography and consisted colors (the palette consists in #009933 for green, #3BBD67 for light green and no more than shades of grey). Bootstrap is used as main CSS framework.
 
 From the **code** perspective, the templated followed good designs patterns that I chose to continue, such as using IDs for bigger sections such as the "Nuestros clientes" section or the "Contacto" one, and then using these IDs for the selectors inside:
 
@@ -96,6 +96,6 @@ _Figure 4: current version of the web._{:.text-center}
 
 Fun fact 2: according to [a post in Quora](https://www.quora.com/What-is-a-reasonable-price-to-pay-for-a-strong-landing-page-design) and [webfx.com](https://www.webfx.com/How-much-should-web-site-cost.html#calculator) this webpage would cost around 1000€ and 6000€, a more than optimistic amount of money, which I probably would set in about ~400€. But hey, nothing is worthier than a sincere "thank you" from your auntie, right?
 
-If you have any question please don't doubt about emailing me, or commenting below!
+If you have any question please don't hesitate about emailing me or commenting below!
 
 ###### _Peace, Julián._
